@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Memory Game</title>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">MEMORY GAME</a>
+			</div>
+
+			<div class="">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">Guesses</a></li>
+						<li><a href="" id="guesses">0</a></li>
+						<li><a href="">Matches</a></li>
+						<li><a href="" id="matches">0</a></li>
+					</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="win"></div>
+
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div class="col-xs-12" id="board">
+
+			</div>
+
+		</div>
+
+		<div class="row" id="menu">
+			<div class="col-sm-1">
+				<button class="btn btn-primary" id="giveUp">Give Up</button>
+			</div>
+			<div class="col-sm-1">
+				<button class="btn btn-primary" id="newGame">New Game</button>
+			</div>
+
+			<div class="col-sm-10">
+				<form action="javascript:void(0)" class="form-inline">
+					<div class="form-group">
+						<label for="numRows">Rows</label>
+						<input type="text" id="numRows" placeholder="2 to 6" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="numCols">Columns</label>
+						<input type="text" id="numCols" placeholder="2 to 12" class="form-control">
+					</div>
+					<button id="generate" class="btn btn-success form-control">Generate Board</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>

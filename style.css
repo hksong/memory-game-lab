@@ -1,0 +1,58 @@
+#board .row {
+  position: relative;
+  height: 110px;
+}
+
+#win {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  z-index: 1;
+  font-size: 4em;
+  text-align: center;
+  display: none;
+}
+
+.card {
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.back {
+  background-color: #ff5078;
+}
+
+.front {
+  background-color: #1e1e1e;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.flipClick.flipped .back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.flipClick.flipped .front {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
